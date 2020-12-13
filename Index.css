@@ -1,0 +1,165 @@
+.Tree {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  margin: 0px auto 500px;
+}
+
+.Tree > .Star {
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+}
+
+.Tree > .Star > .point {
+  width: 0;
+  height: 0;
+  position: relative;
+}
+
+.Tree > .Star > .point > div {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: -160px;
+  left: 0;
+}
+
+.Tree > .Star > .point > div > div[class*="l"] {
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-right: 43.75px solid #fa0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Tree > .Star > .point > div > div[class*="r"] {
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 43.75px solid #e80;
+  position: absolute;
+  top: 0;
+  left: 43.75px;
+}
+
+.Tree > .Star > .point > .b {
+  -webkit-transform: rotate(72deg);
+          transform: rotate(72deg);
+  top: -91.75px;
+  left: 182px;
+}
+
+.Tree > .Star > .point > .e {
+  -webkit-transform: rotate(-72deg);
+          transform: rotate(-72deg);
+  top: -8.75px;
+  left: -122px;
+}
+
+.Tree > .Star > .point > .e > div[class*="l"] {
+  border-right: 43.75px solid #e80;
+}
+
+.Tree > .Star > .point > .e > div[class*="r"] {
+  border-left: 43.75px solid #fa0;
+}
+
+.Tree > .Star > .point > .c {
+  -webkit-transform: rotate(-216deg);
+          transform: rotate(-216deg);
+  top: 102px;
+  left: 173.25px;
+}
+
+.Tree > .Star > .point > .c > div[class*="l"] {
+  border-right: 43.75px solid #e90;
+}
+
+.Tree > .Star > .point > .c > div[class*="r"] {
+  border-left: 43.75px solid #f90;
+}
+
+.Tree > .Star > .point > .d {
+  -webkit-transform: rotate(216deg);
+          transform: rotate(216deg);
+  top: 153px;
+  left: -14px;
+}
+
+.Tree > .Star > .point > .d > div[class*="l"] {
+  border-right: 43.75px solid #e80;
+}
+
+.Tree > .Star > .point > .d > div[class*="r"] {
+  border-left: 43.75px solid #fa0;
+}
+
+.Tree > .tree-top {
+  position: absolute;
+  bottom: 37%;
+  left: 158.5px;
+}
+
+.Tree > .tree-top > .body {
+  width: 0px;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid #0a0;
+}
+
+.Tree > .tree-middle {
+  position: absolute;
+  bottom: 3.25%;
+  left: 58.5px;
+}
+
+.Tree > .tree-middle > .body {
+  width: 100px;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 170px solid #090;
+}
+
+.Tree > .tree-down {
+  position: absolute;
+  bottom: -23%;
+  left: -15px;
+}
+
+.Tree > .tree-down > .body {
+  width: 250px;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 133px solid #080;
+}
+
+.Tree > .trunk {
+  position: absolute;
+  bottom: -53%;
+  left: 225px;
+}
+
+.Tree > .trunk > .body {
+  width: 70px;
+  height: 150px;
+  background-color: #633;
+}
+/*# sourceMappingURL=Index.css.map */

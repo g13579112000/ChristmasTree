@@ -1,0 +1,63 @@
+.Tree {
+  width: 100%;
+  height: 100%;
+}
+.Tree > .Star {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Tree > .Star > .point {
+  width: 0;
+  height: 0;
+  position: relative;
+}
+.Tree > .Star > .point > div {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: -160px;
+  left: 0;
+}
+.Tree > .Star > .point > div > div[class*=l] {
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-right: 43.75px solid #fa0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Tree > .Star > .point > div > div[class*=r] {
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 43.75px solid #e80;
+  position: absolute;
+  top: 0;
+  left: 43.75px;
+}
+.Tree > .Star > .point .b {
+  transform: rotate(72deg);
+  top: -91px;
+  left: 182.25px;
+}
+.Tree > .Star > .point .e {
+  transform: rotate(-72deg);
+  top: -7.75px;
+  left: -122px;
+}
+.Tree > .Star > .point .c {
+  transform: rotate(-216deg);
+  top: 103.75px;
+  left: 173.25px;
+}
+.Tree > .Star > .point .d {
+  transform: rotate(216deg);
+  top: 155px;
+  left: -15px;
+}

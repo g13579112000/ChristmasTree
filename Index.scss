@@ -1,0 +1,144 @@
+.Tree {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    margin: 0px auto 500px;
+    &>.Star {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        transform: scale(0.2);
+        &>.point {
+            width: 0;
+            height: 0;
+            position: relative;
+
+            &>div {
+                width: 0px;
+                height: 0px;
+                position: absolute;
+                top: -160px;
+                left: 0;
+
+                &>div[class*="l"] {
+                    width: 0;
+                    height: 0;
+                    border-top: 100px solid transparent;
+                    border-bottom: 60px solid transparent;
+                    border-right: 43.75px solid #fa0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                &>div[class*="r"] {
+                    width: 0;
+                    height: 0;
+                    border-top: 100px solid transparent;
+                    border-bottom: 60px solid transparent;
+                    border-left: 43.75px solid #e80;
+                    position: absolute;
+                    top: 0;
+                    left: 43.75px;
+                }
+            }
+
+            &>.b {
+                transform: rotate(72deg);
+                top: -91.75px;
+                left: 182px;
+            }
+
+            &>.e {
+                transform: rotate(-72deg);
+                top: -8.75px;
+                left: -122px;
+                &>div[class*="l"]{
+                    border-right: 43.75px solid #e80;
+                }
+                &>div[class*="r"]{
+                    border-left: 43.75px solid #fa0;
+                }
+            }
+
+            &>.c{
+                transform: rotate(-216deg);
+                top:102px;
+                left: 173.25px;
+                &>div[class*="l"]{
+                    border-right: 43.75px solid #e90;
+                }
+                &>div[class*="r"]{
+                    border-left: 43.75px solid #f90;
+                }
+            }
+
+            &>.d{
+                transform: rotate(216deg);
+                top: 153px;
+                left: -14px;
+
+                &>div[class*="l"]{
+                    border-right: 43.75px solid #e80;
+                }
+                &>div[class*="r"]{
+                    border-left: 43.75px solid #fa0;
+                }
+            }
+
+        }
+
+    }
+
+    &>.tree-top{
+        position: absolute;
+        bottom: 37%;
+        left: 158.5px;
+        &>.body{
+            width: 0px;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid #0a0;
+        }
+    }
+
+    &>.tree-middle{
+        position: absolute;
+        bottom: 3.25%;
+        left: 58.5px;
+        &>.body{
+            width: 100px;
+            height: 0;
+            border-left: 150px solid transparent;
+            border-right: 150px solid transparent;
+            border-bottom: 170px solid #090;
+        }
+    }
+
+    &>.tree-down{
+        position: absolute;
+        bottom: -23%;
+        left: -15px;
+        &>.body{
+            width: 250px;
+            height: 0;
+            border-left: 150px solid transparent;
+            border-right: 150px solid transparent;
+            border-bottom: 133px solid #080;
+        }
+    }
+
+    &>.trunk{
+        position: absolute;
+        bottom: -53%;
+        left: 225px;
+        &>.body{
+            width: 70px;
+            height: 150px;
+            background-color: #633
+        }
+    }
+}
